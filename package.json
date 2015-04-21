@@ -1,13 +1,13 @@
 {
-  "name": "gulp-<%= pluginName %>",
-  "version": "0.0.0",
-  "description": "",
+  "name": "gulp-angular-dependencies-builder",
+  "version": "0.0.1",
+  "description": "Build a DB for angular dependencies and in which files they reside (to use in conjunction with gulp-angular-app-builder)",
   "license": "MIT",
-  "repository": "<%= githubUsername %>/gulp-<%= pluginName %>",
+  "repository": "miguelrjim/gulp-angular-dependencies-builder",
   "author": {
-    "name": "<%= name %>",
-    "email": "<%= email %>",
-    "url": "https://github.com/<%= githubUsername %>"
+    "name": "Miguel Jimenez",
+    "email": "miguel.ricardo.jimenez.gomez@gmail.com",
+    "url": "https://github.com/miguelrim"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.1",
+    "nedb": "^1.1.2",
     "through2": "^0.6.3"
   },
   "devDependencies": {
