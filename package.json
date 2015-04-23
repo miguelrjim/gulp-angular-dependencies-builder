@@ -1,6 +1,6 @@
 {
   "name": "gulp-angular-dependencies-builder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Build a DB for angular dependencies and in which files they reside (to use in conjunction with gulp-angular-app-builder)",
   "license": "MIT",
   "repository": "miguelrjim/gulp-angular-dependencies-builder",
