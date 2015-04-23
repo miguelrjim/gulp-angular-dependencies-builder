@@ -1,12 +1,7 @@
-# gulp-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
-
-> My <%= superb %> gulp plugin
-
-
 ## Install
 
 ```
-$ npm install --save-dev gulp-<%= pluginName %>
+$ npm install --save-dev gulp-angular-dependencies-builder
 ```
 
 
@@ -14,30 +9,17 @@ $ npm install --save-dev gulp-<%= pluginName %>
 
 ```js
 var gulp = require('gulp');
-var <%= camelPluginName %> = require('gulp-<%= pluginName %>');
+var depBuilder = require('gulp-angular-dependencies-builder');
 
 gulp.task('default', function () {
-	return gulp.src('src/file.ext')
-		.pipe(<%= camelPluginName %>())
-		.pipe(gulp.dest('dist'));
+  return gulp.src('src/**/modules.js')
+    .pipe(stripComments())
+    .pipe(depBuilder({
+      db: 'db.dat'
+    }));
 });
 ```
 
-
-## API
-
-### <%= camelPluginName %>(options)
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
-
 ## License
 
-MIT © [<%= name %>](https://github.com/<%= githubUsername %>)
+MIT © [Miguel Jimenez](https://github.com/miguelrjim)
